@@ -10,7 +10,7 @@ let db_password = fs.readFileSync("/var/www/cerebro/CodingBootcamp/Excercises/No
 //   ? "postgresql:///messagely_test"
 //   : "postgresql:///messagely";
 
-const DB_URI = process.env.NODE_ENV === "test" ? `postgresql://akindeji:${db_password}@localhost:5432/lunchly_test` : `postgresql://akindeji:${db_password}@localhost:5432/lunchly`;
+const DB_URI = process.env.NODE_ENV === "test" ? `postgresql://akindeji:${db_password}@localhost:5432/messagely_test` : `postgresql://akindeji:${db_password}@localhost:5432/messagely`;
 
 const SECRET_KEY = process.env.SECRET_KEY || "secret";
 
